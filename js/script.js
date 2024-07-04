@@ -24,7 +24,7 @@ function nextSlide() {
     showSlide();
 }
 
-// Menetapkan interval untuk mengubah slide setiap 2 detik
+// Menetapkan interval untuk mengubah slide setiap saat 2 detik
 let slideInterval = setInterval(nextSlide, 2000);
 
 // Menambahkan event listener untuk menghentikan interval saat area .banner-container diklik
