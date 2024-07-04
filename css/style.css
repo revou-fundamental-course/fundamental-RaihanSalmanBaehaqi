@@ -237,7 +237,7 @@ footer {
 @media only screen and (max-width: 600px) {
     .nav-container {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .logo-icon {
@@ -248,8 +248,8 @@ footer {
 
     nav>a {
         display: block;
-        width: 100%;
-        padding: 10px;
+        width: 123%;
+        padding: 10px 100px 20px 100px;
         text-align: center;
     }
 
