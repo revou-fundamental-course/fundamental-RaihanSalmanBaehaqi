@@ -248,7 +248,7 @@ footer {
 
     nav>a {
         display: block;
-        width: 500%;
+        width: 100%;
         padding: 10px;
         text-align: center;
     }
