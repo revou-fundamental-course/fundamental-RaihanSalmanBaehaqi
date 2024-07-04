@@ -1,1 +1,294 @@
-/* Ini CSS */
+body {
+    margin: 0px;
+}
+
+/*Ini adalah judul*/
+.header-container {
+    background-color: #af2322;
+    text-align: center;
+    color: white;
+}
+
+#header-container {
+    margin: 0px;
+    padding: 25px
+}
+
+/*Ini adalah navbar*/
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 10px;
+}
+
+/*Ini adalah logo*/
+.logo-icon {
+    height: 80px;
+    width: 80px;
+    margin-left: 30px;
+
+    background-image: url(../assets/logo.png);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+/*Ini adalah menu navigasi*/
+nav>a {
+    padding: 10px 32px 10px 32px;
+    border: 1px solid;
+}
+
+main {
+    padding: 0px 30px 0px 30px;
+}
+
+/*Ini adalah banner*/
+.banner-container {
+    position: relative;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 3%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .active {
+    display: block;
+}
+
+/*Ini adalah our profile*/
+.about-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-about {
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.icon-img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-container>h4 {
+    text-align: justify;
+    margin-right: 50px;
+}
+
+/*Ini adalah collaboration*/
+.profile-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.profile-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-icon {
+    height: 80px;
+    width: 80px;
+    border-radius: 40%;
+    background-size: cover;
+    background-position: center;
+}
+
+#colab-1 {
+    background-image: url(../assets/colab1.jpg);
+}
+
+#colab-2 {
+    background-image: url(../assets/colab2.jpg);
+}
+
+#colab-3 {
+    background-image: url(../assets/colab3.jpg);
+}
+
+#colab-4 {
+    background-image: url(../assets/colab4.jpg);
+}
+
+#colab-5 {
+    background-image: url(../assets/colab5.jpg);
+}
+
+#colab-6 {
+    background-image: url(../assets/colab6.jpg);
+}
+
+#colab-7 {
+    background-image: url(../assets/colab7.jpg);
+}
+
+
+/*Ini adalah message*/
+.massage-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/*Ini adalah form*/
+.form-container {
+    width: 500px;
+}
+
+.form-container label {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+}
+
+.form-container table {
+    width: 100%;
+}
+
+.form-container td {
+    padding: 10px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="date"],
+.form-container textarea {
+    width: calc(100% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-container input[type="radio"] {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.form-container button[type="submit"] {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #7d807d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/*Ini adalah submited validation*/
+.info-container {
+    width: 450px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.info-container p {
+    margin-bottom: 5px;
+}
+
+/*Ini adalah footer*/
+.footer-container {
+    border-top: 1px solid;
+    clear: both;
+}
+
+footer {
+    background-color: #252525;
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    color: white;
+}
+
+/*Ini adalah responsif media query*/
+@media only screen and (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-icon {
+        margin-left: 0;
+        margin-bottom: 10px;
+        align-self: center;
+    }
+
+    nav>a {
+        display: block;
+        width: 500%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icon-about {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .profile-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-item {
+        margin-bottom: 20px;
+    }
+
+    .massage-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container, .info-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .slider {
+        height: auto;
+    }
+
+    .slide img {
+        height: auto;
+    }
+}

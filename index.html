@@ -4,12 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <!--Ini adalah judul-->
+    <header class="header-container">
+        <h1 id="header-container">Alliance Regional 48</h1>
+    </header>
+    <!--Ini adalah navbar-->
+    <header class="nav-container">
+        <section class="logo-icon"></section>
         <nav>
+            <a href="#home-container">Home</a>
+            <a href="#about-container">Our Profile</a>
+            <a href="#profile-container">Collaboration</a>
+            <a href="#massage-container">Massage Us</a>
         </nav>
     </header>
-    <p>Testing</p>
+
+    <main>
+        <!--Ini adalah halaman home-->
+        <section class="home-container" id="home-container">
+            <header>
+                <h1>Hi <span id="nameID"> User </span> ! <br> Welcome To Website Alliance Regional 48 &#128075</h1>
+            </header>
+
+            <article>
+                <!--Ini adalah banner auto slide-->
+                <div class="banner-container"></div>
+                    <div class="slider">
+                        <div class="slide active">
+                            <img src="assets/home1.jpg" alt="Image 1">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/home2.jpg" alt="Image 2">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/home3.jpg" alt="Image 3">
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <hr />
+
+        <!--Ini adalah halaman our profile-->
+        <section id="about-container">
+            <header>
+                <h1>Our Profile</h1>
+            </header>
+
+            <article class="about-container">
+                    <div class="icon-about">
+                        <img src="assets/logo.png" alt="logo" class="icon-img">
+                    </div>
+                    <h4>
+                    Alliance Regional 48 adalah komunitas nasional berkawasan di Indonesia yang menjadi wadah 
+                    atau tempat kumpul bagi para Fans JKT48 yang sudah tergabung dan terdaftar pada wilayah 
+                    atau regional masing-masing.
+                    </h4>
+                </div>
+            </article>
+        </section>
+
+        <hr />
+
+        <!--Ini adalah halaman collaboration-->
+        <section id="profile-container">
+            <header>
+                <h1>Collaboration</h1>
+            </header>
+
+            <article class="profile-content">
+                <div class="profile-item">
+                    <div class="profile-icon" id="colab-1"></div>
+                    <p>FJKT48 BANDUNG</p>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-icon" id="colab-2"></div>
+                    <p>FJKT48 PURWAKARTA</p>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-icon" id="colab-3"></div>
+                    <p>FJKT48 JAKBAR</p>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-icon" id="colab-4"></div>
+                    <p>FJKT48 TANGSEL</p>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-icon" id="colab-5"></div>
+                    <p>FJKT48 MEDAN</p>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-icon" id="colab-6"></div>
+                    <p>FJKT48 KALSEL</p>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-icon" id="colab-7"></div>
+                    <p>FJKT48 SULUT</p>
+                </div>
+            </article>
+        </section>
+
+        <hr />
+
+        <!--Ini adalah halaman message-->
+        <section class="massage-container" id="massage-container">
+            <div class="form-container">
+                <h1>Message Us</h1>
+                <form id="myForm">
+                    <table>
+                        <tr>
+                            <td><label for="name">Nama:</label></td>
+                            <td><input type="text" id="name" name="name" required></td>
+                            <td><span id="nameError" style="color: red;"></span></td>
+                        </tr>
+                        <tr>
+                            <td><label for="birthdate">Tanggal Lahir:</label></td>
+                            <td><input type="date" id="birthdate" name="birthdate" required></td>
+                            <td><span id="birthdateError" style="color: red;"></span></td>
+                        </tr>
+                        <tr>
+                            <td><label for="gender">Jenis Kelamin:</label></td>
+                            <td>
+                                <input type="radio" id="male" name="gender" value="Laki-Laki" required>
+                                <label for="male">Laki-Laki</label>
+                                <input type="radio" id="female" name="gender" value="Perempuan" required>
+                                <label for="female">Perempuan</label>
+                                <span id="genderError" style="color: red;"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="message">Pesan:</label></td>
+                            <td><textarea id="message" name="message" rows="5" required></textarea></td>
+                            <td><span id="messageError" style="color: red;"></span></td>
+                        </tr>
+                    </table>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        
+            <div class="info-container">
+                <!-- <h3>Current Time:</h3>
+                <p id="currentTime"></p> -->
+        
+                <h3>Submited Information:</h3>
+                <p id="nameInfo"></p>
+                <p id="birthdateInfo"></p>
+                <p id="genderInfo"></p>
+                <p id="messageInfo"></p>
+            </div>
+        
+        </section>
+
+    </main>
+
+            <!--Ini adalah footer-->
+            <section class="footer-container">
+                <footer>
+                    <p>&copy Alliance Regional 48</p>
+                </footer>
+            </section>
+
+<script src="js/script.js"></script>
 </body>
 </html>
